@@ -1,3 +1,12 @@
+// Generate Random Whole Numbers within a Range
+function randomRange(myMin, myMax) {
+   //Math.floor gets the whole number
+   //Math.random is multiplied by the result of the two parameters and 1 is added
+   // we add myMin parameter to the rouned whole number
+
+   return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+}
+
 //profile Lookup Function
 // giving some objects with data to use for the looping of contacts
 var contacts = [
