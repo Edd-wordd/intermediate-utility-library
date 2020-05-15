@@ -1,3 +1,15 @@
+//check for the presence of an element using indexOf()
+let hideAndSeek = ["edward", "sarah", "bhavin", "danny", "joe"];
+
+function checkForElement(elem) {
+   // function is taking two parameters one array and one element
+   if (hideAndSeek.indexOf(elem) != -1) {
+      return true;
+   } else {
+      return false;
+   }
+}
+
 // add items using splice()
 var mindBlownAdd = ["some", "of", "these", "are", "confusing"];
 function addItemSplice(minIndex, maxIndex, addThis) {
