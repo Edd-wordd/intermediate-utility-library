@@ -24,7 +24,7 @@ function profileLookup(name, prop) {
          //   checkng to see if the contact has that property
          if (contacts[listPosition].hasOwnProperty(prop)) {
             //returns contact with prop
-            return contacts[x][prop];
+            return contacts[listPosition][prop];
          } else {
             //if not found displays this message
             return "No such property";
