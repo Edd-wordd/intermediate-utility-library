@@ -1,3 +1,9 @@
+//  check what type of element was inputed
+function checkType(elem) {
+   var type = typeof elem;
+   return type;
+}
+
 //check for the presence of an element using indexOf()
 let hideAndSeek = ["edward", "sarah", "bhavin", "danny", "joe"];
 
