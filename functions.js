@@ -33,7 +33,7 @@ function addItemSplice(minIndex, maxIndex, addThis) {
 // remove items using splice
 var mindBlown = ["some", "of", "these", "are", "confusing"];
 function removeItemSplice(minIndex, maxIndex) {
-   // can take up to three parameters which are integers
+   // can take up to three parameters
    // first one sets index to start removal
    // second one determines how many values to delete
    //    var startingPoint = minIndex;
