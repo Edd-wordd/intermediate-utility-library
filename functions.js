@@ -88,9 +88,9 @@ function profileLookup(name, prop) {
    return "No such contact";
 }
 // Iterating odd numbers with a for loop
-function oddNumberLoop() {
+function oddNumberLoop(num) {
    myArray = [];
-   for (let i = 1; i <= 20; i += 2) {
+   for (let i = 1; i <= num; i += 2) {
       myArray.push(i);
    }
    return myArray;
