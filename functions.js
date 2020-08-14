@@ -5,9 +5,10 @@ function checkType(elem) {
 }
 
 //check for the presence of an element using indexOf()
-let hideAndSeek = ["edward", "sarah", "bhavin", "danny", "joe"];
 
 function checkForElement(elem) {
+   let hideAndSeek = ["edward", "sarah", "bhavin", "danny", "joe"];
+
    // function is taking two parameters one array and one element
    if (hideAndSeek.indexOf(elem) != -1) {
       return true;
@@ -86,25 +87,52 @@ function profileLookup(name, prop) {
    }
    return "No such contact";
 }
+// Iterating odd numbers with a for loop
+function oddNumberLoop() {
+   myArray = [];
+   for (let i = 1; i <= 20; i += 2) {
+      myArray.push(i);
+   }
+   return myArray;
+}
+// Record Collection
+let collection = {
+   2548: {
+      album: "Slippery When Wet",
+      artist: "Bon Jovi",
+      tracks: ["Let It Rock", "You Give Love a Bad Name"],
+   },
+   2468: {
+      album: "1999",
+      artist: "Prince",
+      tracks: ["1999", "Little Red Corvette"],
+   },
+   1245: {
+      artist: "Robert Palmer",
+      tracks: [],
+   },
+   5439: {
+      album: "ABBA Gold",
+   },
+};
+
+function recordCollection(id, prop, value) {
+   if (value === "") delete collection[id][prop];
+   else if (prop === "tracks") {
+      collection[id][prop] = collection[id][prop] || [];
+      collection[id][prop].push(value);
+   } else {
+      collection[id][prop] = value;
+   }
+   console.log(collection);
+
+   return collection;
+}
 
 // Card Counting function
-// var count = 0; //variable to save the count
-
 var count = 0;
 
 function cc(card) {
-   // function cc(card) {
-   //    if (card >= 2 <= 6) {
-   //       //should I use an and operator &&
-   //       return count++ + " Bet"; //add the count plus one
-   //    } else if (card == 7 <= 9) {
-   //       //and operator?
-   //       return (count = count + " Bet"); // count stays
-   //    } else if ((card === 10, "J", "Q", "K", "A")) {
-   //       //strict operator?
-   //       return count-- + " Bet"; //decremetning the count
-   //    }
-   // }
    var msg = "";
 
    switch (card) {
