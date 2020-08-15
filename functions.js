@@ -53,7 +53,6 @@ function randomRange(myMin, myMax) {
 }
 
 //profile Lookup Function
-// giving some objects with data to use for the looping of contacts
 var contacts = [
    {
       firstName: "Edward",
