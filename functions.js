@@ -5,6 +5,7 @@ function checkType(elem) {
 }
 
 //check for the presence of an element using indexOf()
+//  add this comment to test git commits
 
 function checkForElement(elem) {
    let hideAndSeek = ["edward", "sarah", "bhavin", "danny", "joe"];
